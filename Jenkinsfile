@@ -1,7 +1,6 @@
 pipeline {
     agent {
         docker {
-            label 'docker'
             image 'python:3.9-slim'
             // args '-v /var/jenkins_home:/var/jenkins_home' // Optional, to mount volumes
         }
